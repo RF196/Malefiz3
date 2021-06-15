@@ -7,10 +7,10 @@ import javax.swing.SpringLayout.Constraints
 import scala.swing.event.ButtonClicked
 import scala.swing.{Action, Button, Dimension, Frame, GridBagPanel, Label, Menu, MenuBar, MenuItem, TextField}
 
-class PlayerGui (controller: ControllerInterface) extends Frame {
+class PlayerGui(controller: ControllerInterface) extends Frame {
   
   title = "Malefiz"
-  visible = false
+  visible = true
   centerOnScreen()
 
   val playerLabel: Label = new Label("Enter the names")
@@ -100,21 +100,28 @@ class PlayerGui (controller: ControllerInterface) extends Frame {
 
   listenTo(continueButton)
 
+  def showGameGui(): Unit = {
+    val a = new GameGui(controller)
+    a.visible = true
+    a.updatePlayerArea()
+    a.updatePlayerTurn()
+    a.drawGameBoard()
+    a.updateInformationArea()
+    this.deafTo(controller)
+    this.close()
+  }
+  
   reactions += {
     case ButtonClicked(`continueButton`) =>
-      val pList = List(playerOneName.text, playerTwoName.text, playerThreeName.text, playerFourName.text)
-      pList.indices.foreach(x => if(pList(x) != "") controller.execute("n " + pList(x)))
-      controller.execute("start")
-      this.visible = false
-      
-      /*
-      gameGui.visible = true
-      gameGui.updatePlayerArea()
-      gameGui.updatePlayerTurn()
-      gameGui.drawGameBoard()
-      gameGui.updateInformationArea()
-      
-       */
+      val players = List(playerOneName.text, playerTwoName.text, playerThreeName.text, playerFourName.text)
+      players.map(name => {
+        if (name != "") {
+          controller.execute("n " + name)
+        }
+      })
+      controller.execute("n start")
+      visible = false
+      showGameGui()
   }
 
   size = new Dimension(500, 500)

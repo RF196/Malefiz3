@@ -7,7 +7,7 @@ import controller.ControllerInterface
 import scala.swing.{Button, Dimension, Frame, GridBagPanel, Label}
 import scala.swing.event.ButtonClicked
 
-class Gui(controller: ControllerInterface) extends Frame {
+class StartGui(controller: ControllerInterface) extends Frame {
   
   visible = true
   title = "Malefiz"
@@ -61,28 +61,19 @@ class Gui(controller: ControllerInterface) extends Frame {
   }
 
   listenTo(newGameButton, quitButton, loadButton)
+  
+  def showPlayersGui(): Unit = {
+    new PlayerGui(controller)
+    this.deafTo(controller)
+    this.close()
+  }
 
   reactions += {
     case ButtonClicked(`quitButton`) => System.exit(0)
-    case ButtonClicked(`loadButton`) =>
-      
-      controller.load()
-      /*
-      gameGui.visible = true
-      gameGui.updateInformationArea()
-      gameGui.updatePlayerTurn()
-      gameGui.updatePlayerArea()
-      gameGui.updateRandomNumberArea()
-      gameGui.drawGameBoard()
-      gameGui.repaint()
-      
-       */
+    case ButtonClicked(`loadButton`) => controller.load()
     case ButtonClicked(`newGameButton`) =>
       visible = false
-      /*
-      entryPlayerGui.visible = true
-      
-       */
+      showPlayersGui()
   }
 
   size = new Dimension(500, 500)

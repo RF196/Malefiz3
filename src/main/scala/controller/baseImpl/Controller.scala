@@ -1,6 +1,6 @@
 package controller.baseImpl
 
-import aview.{GameGui, Gui, PlayerGui}
+import aview.{GameGui, StartGui, PlayerGui}
 import controller.Statements.Statements
 import controller.gamestates.Gamestate
 import controller.{ControllerInterface, GameBoardChanged, Statements, Winner}

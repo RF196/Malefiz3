@@ -124,7 +124,7 @@ case class Gameboard(graph: Map[Int, Set[Int]],
 
   override def setPossibleCellsTrueOrFalse(cellNumbers: List[Int], state: String): Gameboard = {
     state match {
-      case "2" => copy(cells = setPossibleCells(cells.length - 1, cellNumbers, cells)(markCell(boolean =
+      case "3" => copy(cells = setPossibleCells(cells.length - 1, cellNumbers, cells)(markCell(boolean =
         true)))
       case _ => copy(cells = setPossibleCells(cells.length - 1, cellNumbers, cells)(markCell(boolean =
         false)))
@@ -145,7 +145,7 @@ case class Gameboard(graph: Map[Int, Set[Int]],
 
   override def setPossibleFiguresTrueOrFalse(cellNumber: Int, stateNr: String): Gameboard = {
     stateNr match {
-      case "1" => copy(cells = setPossibleFigures(cells.length - 1, cellNumber, cells)(markFigure(boolean = true)))
+      case "2" => copy(cells = setPossibleFigures(cells.length - 1, cellNumber, cells)(markFigure(boolean = true)))
       case _ => copy(cells = setPossibleFigures(cells.length - 1, cellNumber, cells)(markFigure(boolean = false)))
     }
   }
@@ -162,11 +162,11 @@ case class Gameboard(graph: Map[Int, Set[Int]],
     else
       setPossibleFigures(cellListLength - 1, cellNumber, cellList)(markFigures)
 
-  override def markFigure(boolean: Boolean)(cellNumber: Int): Cell = cells(cellNumber).copy(contains = "TEST")
+  override def markFigure(boolean: Boolean)(cellNumber: Int): Cell = cells(cellNumber).copy(possibleFigures = boolean)
 
   override def setWall(cellNumber: Int): Gameboard = {
     cells(cellNumber).contains match {
-      case figure: Figure => return this
+      
       case string: String =>
         if (string == "WALL") {
           return this

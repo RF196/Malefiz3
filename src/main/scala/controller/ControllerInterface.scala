@@ -11,7 +11,6 @@ import scala.swing.{Color, Publisher}
 
 trait ControllerInterface extends Publisher:
   
-
   def gameBoardToString: Option[String]
   
   def gameboard: GameboardInterface

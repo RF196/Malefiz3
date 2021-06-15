@@ -1,4 +1,4 @@
-import aview.{GameGui, Gui, PlayerGui, Tui}
+import aview.{GameGui, StartGui, PlayerGui, Tui}
 import controller.baseImpl.Controller
 import model.baseImpl.{Gameboard, Reader}
 import model.{GameboardInterface, ReaderInterface}
@@ -21,7 +21,7 @@ import scala.io.StdIn.readLine
 
   val controller: Controller = new Controller(gameboard)
   val tui: Tui = new Tui(controller)
-  val entryGui = new Gui(controller)
+  val gui = new StartGui(controller)
 
   var input: String = ""
 

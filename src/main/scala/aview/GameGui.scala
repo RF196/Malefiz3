@@ -19,12 +19,12 @@ import scala.swing.{Action, Button, Dialog, Dimension, Frame, Graphics2D, GridBa
 
 class GameGui(controller: ControllerInterface) extends Frame {
   
-  val image: BufferedImage = ImageIO.read(new File("src/main/scala/de/htwg/se/malefiz/aview/gui/malefizimg.png"))
+  val image: BufferedImage = ImageIO.read(new File("src/main/resources/images/malefizimg.png"))
   val g2d: Graphics2D = image.createGraphics()
 
   title = "Malefiz"
   centerOnScreen()
-  visible = false
+  visible = true
 
   var mouseX: Set[Int] = Set().empty
   var mouseY: Set[Int] = Set().empty
@@ -62,9 +62,7 @@ class GameGui(controller: ControllerInterface) extends Frame {
   cubeLabel.border = Swing.EmptyBorder(3)
 
   val cubeButton = new Button()
-  val cubeIcon = new ImageIcon(
-    "src/main/scala/de/htwg/se/malefiz/aview/gui/dice.png"
-  )
+  val cubeIcon = new ImageIcon("src/main/resources/images/dice.png")
   cubeButton.icon = cubeIcon
   cubeButton.border = Swing.EmptyBorder(3)
 
@@ -188,13 +186,12 @@ class GameGui(controller: ControllerInterface) extends Frame {
   }
 
   def updateRandomNumberArea(): Boolean = {
-    randomNumberArea.text = controller.gameboard.dice.toString
+    randomNumberArea.text = controller.gameboard.dice.getOrElse("EMPTY").toString
     true
   }
 
   def updateInformationArea(): Boolean = {
-    this.informationArea.text =
-      Statements.value(StatementRequest(controller))
+    this.informationArea.text = Statements.value(StatementRequest(controller))
     true
   }
 
