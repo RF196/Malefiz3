@@ -12,5 +12,5 @@ class Tui(controller: ControllerInterface) extends Reactor:
     input match {
       case "load" =>
       case "save" =>
-      case _ =>
+      case _ => controller.execute(input)
     }

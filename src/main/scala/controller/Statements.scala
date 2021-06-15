@@ -5,8 +5,10 @@ object Statements extends Enumeration with InstructionInterface:
   type Statements = Value
   val addPlayer, roll, selectFigure, selectField, wrongField, selectWrongFigure, nextPlayer, wall, wrongWall, won, changeFigure = Value
 
-  val value: Handler2 =
-    case StatementRequest(controller) if controller.gameboard.statementStatus == roll =>
+  val value: Handler2 = {
+    case StatementRequest(controller)
+      if controller.gameboard.statementStatus ==
+        roll =>
       s"${controller.gameboard.playerTurn} du bist als erstes dran. Klicke auf den Würfel!"
     case StatementRequest(controller)
       if controller.gameboard.statementStatus ==
@@ -50,3 +52,5 @@ object Statements extends Enumeration with InstructionInterface:
       if controller.gameboard.statementStatus ==
         changeFigure =>
       s"${controller.gameboard.playerTurn} du hast deine Figur abgewählt. Wähle bitte erneut eine Figur aus!"
+  }
+    
