@@ -1,0 +1,51 @@
+
+Ñ(src/main/scala/model/baseImpl/Cell.scala*$
+model/baseImpl/Cell# €*Cell€*1
+model/baseImpl/Cell#`<init>`(). €@*<init>€*9
+'model/baseImpl/Cell#`<init>`().(number) €*number€*=
+)model/baseImpl/Cell#`<init>`().(contains) €*contains€*I
+/model/baseImpl/Cell#`<init>`().(wallPermission) €*wallPermission€*7
+&model/baseImpl/Cell#`<init>`().(coord) €*coord€*-
+model/baseImpl/Cell#number. €*number€*1
+model/baseImpl/Cell#contains. €*contains€*=
+#model/baseImpl/Cell#wallPermission. €*wallPermission€*+
+model/baseImpl/Cell#coord. €*coord€*(
+model/baseImpl/Cell#copy().*copy€*2
+#model/baseImpl/Cell#copy().(number)*number€*6
+%model/baseImpl/Cell#copy().(contains)*contains€*B
++model/baseImpl/Cell#copy().(wallPermission)*wallPermission€*0
+"model/baseImpl/Cell#copy().(coord)*coord€*<
+%model/baseImpl/Cell#copy$default$1().*copy$default$1€*<
+%model/baseImpl/Cell#copy$default$2().*copy$default$2€*<
+%model/baseImpl/Cell#copy$default$3().*copy$default$3€*<
+%model/baseImpl/Cell#copy$default$4().*copy$default$4€*$
+model/baseImpl/Cell#_1().*_1€*$
+model/baseImpl/Cell#_2().*_2€*$
+model/baseImpl/Cell#_3().*_3€*$
+model/baseImpl/Cell#_4().*_4€*#
+model/baseImpl/Cell.
+ *Cell€**
+model/baseImpl/Cell.apply().*apply€*3
+$model/baseImpl/Cell.apply().(number)*number€*7
+&model/baseImpl/Cell.apply().(contains)*contains€*C
+,model/baseImpl/Cell.apply().(wallPermission)*wallPermission€*1
+#model/baseImpl/Cell.apply().(coord)*coord€*.
+model/baseImpl/Cell.unapply().*unapply€*/
+#model/baseImpl/Cell.unapply().(x$1)*x$1€*0
+model/baseImpl/Cell.toString().*toString€2
+ model/baseImpl/2
+ model/2"
+ model/baseImpl/Cell#2-
+ model/baseImpl/Cell#`<init>`().2
+ 
+scala/Int#2
+. /
+scala/`|`#2$
+' -model/baseImpl/Figure#2"
+0 6scala/Predef.String#2
+H Oscala/Boolean#2#
+X ]model/baseImpl/Point#2)
+ model/baseImpl/Cell#number.2+
+ %model/baseImpl/Cell#contains.21
+8 F#model/baseImpl/Cell#wallPermission.2(
+Q Vmodel/baseImpl/Cell#coord.PZ 910F6132C0FF23FB8FC815B11F150FC8

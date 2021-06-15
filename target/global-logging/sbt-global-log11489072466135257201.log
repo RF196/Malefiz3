@@ -1,0 +1,80 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 10 Scala sources to /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E046] Cyclic Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/Malefiz.scala:21:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m[33mval[0m [36mcontroller[0m: [35mControllerInterface[0m = [33mnew[0m [35mController[0m(gameboard)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                Cyclic reference involving val <import>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/Malefiz.scala:21:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m[33mval[0m [36mcontroller[0m: [35mControllerInterface[0m = [33mnew[0m [35mController[0m(gameboard)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                          [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                          Not found: type Controller[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/Malefiz.scala:21:53 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m[33mval[0m [36mcontroller[0m: [35mControllerInterface[0m = [33mnew[0m [35mController[0m(gameboard)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                     [31m^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                   too many arguments for [33mconstructor[0m [35mObject[0m: (): Object[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/GameGui.scala:332:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m332 |[0m      entryGui.visible = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      Not found: entryGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:68:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m68 |[0m      entryGui.visible = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: entryGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:70:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m70 |[0m      gameGui.visible = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:71:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m71 |[0m      gameGui.updateInformationArea()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:72:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m72 |[0m      gameGui.updatePlayerTurn()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:73:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m73 |[0m      gameGui.updatePlayerArea()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:74:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m74 |[0m      gameGui.updateRandomNumberArea()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:75:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m75 |[0m      gameGui.drawGameBoard()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:76:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m76 |[0m      gameGui.repaint()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/Gui.scala:79:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m79 |[0m      entryPlayerGui.visible = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Not found: entryPlayerGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/PlayerGui.scala:109:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m109 |[0m      gameGui.visible = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/PlayerGui.scala:110:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m110 |[0m      gameGui.updatePlayerArea()[0m
+[0m[[0m[31merror[0m] [0m[0m    |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/PlayerGui.scala:111:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m111 |[0m      gameGui.updatePlayerTurn()[0m
+[0m[[0m[31merror[0m] [0m[0m    |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/PlayerGui.scala:112:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m112 |[0m      gameGui.drawGameBoard()[0m
+[0m[[0m[31merror[0m] [0m[0m    |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/aview/PlayerGui.scala:113:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m113 |[0m      gameGui.updateInformationArea()[0m
+[0m[[0m[31merror[0m] [0m[0m    |      [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      Not found: gameGui[0m
+[0m[[0m[31merror[0m] [0m[0m18 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 14.06.2021, 18:52:36[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

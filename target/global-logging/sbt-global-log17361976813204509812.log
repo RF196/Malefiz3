@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/model/baseImpl/Reader.scala:12:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m  [33mdef[0m [36mreadFromGraphFile[0m([36minput[0m: [35mString[0m): [35mMap[Int, Set[Int]][0m =[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |error overriding [33mmethod[0m [35mreadFromGraphFile[0m in [33mtrait[0m [35mReaderInterface[0m of type (input: String): Map[Int, Set[Int]];[0m
+[0m[[0m[31merror[0m] [0m[0m   |  [33mmethod[0m [35mreadFromGraphFile[0m of type (input: String): collection.mutable.Map[Int, Set[Int]] has incompatible type[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 10.06.2021, 23:26:51[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

@@ -1,0 +1,35 @@
+
+ü
+*src/main/scala/model/ReaderInterface.scala*.
+model/ReaderInterface#*ReaderInterface€*3
+!model/ReaderInterface#`<init>`(). €@*<init>€*F
+*model/ReaderInterface#readFromGraphFile(). *readFromGraphFile€*?
+1model/ReaderInterface#readFromGraphFile().(input)*input€*F
+*model/ReaderInterface#readFromCellsFile(). *readFromCellsFile€*G
+5model/ReaderInterface#readFromCellsFile().(inputFile)*	inputFile€2
+ model/2"
+ model/baseImpl/Cell.2"
+ model/baseImpl/Cell#2
+ model/baseImpl/2
+ model/2+
+  #scala/collection/mutable/Map.2+
+  #scala/collection/mutable/Map#2'
+ scala/collection/mutable/2
+ scala/collection/2
+ scala/2$
+ model/ReaderInterface#2/
+ !model/ReaderInterface#`<init>`().28
+ *model/ReaderInterface#readFromGraphFile().2?
+ 1model/ReaderInterface#readFromGraphFile().(input)2"
+ %scala/Predef.String#2+
+( +scala/collection/mutable/Map#2
+, /
+scala/Int#2
+1 4scala/Predef.Set#2
+5 8
+scala/Int#28
+ *model/ReaderInterface#readFromCellsFile().2C
+ !5model/ReaderInterface#readFromCellsFile().(inputFile)2"
+# )scala/Predef.String#2!
+, 0scala/package.List#2"
+1 5model/baseImpl/Cell#PZ F7BF1520BDA3CB282C75364F27B450DC

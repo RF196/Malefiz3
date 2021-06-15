@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(MalefizTest, com.novocode.junit.JUnitFingerprint@30639ff3, false, [SuiteSelector])[0m
+[0m[[0m[31merror[0m] [0m[0mTest [33mMalefizTest[0m.[31mt1[0m failed: expected:<I was compiled by [dotty :)]> but was:<I was compiled by [Scala 3. :)[0m
+[0m[[0m[31merror[0m] [0m[0m]>, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
+[0m[[0m[31merror[0m] [0m[0mFailed: Total 1, Failed 1, Errors 0, Passed 0[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	MalefizTest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

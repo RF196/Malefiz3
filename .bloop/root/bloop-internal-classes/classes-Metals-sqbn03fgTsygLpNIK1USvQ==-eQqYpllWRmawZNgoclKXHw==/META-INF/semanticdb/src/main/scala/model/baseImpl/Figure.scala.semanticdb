@@ -1,0 +1,43 @@
+
+Þ*src/main/scala/model/baseImpl/Figure.scala*(
+model/baseImpl/Figure# €*Figure€*3
+!model/baseImpl/Figure#`<init>`(). €@*<init>€*;
+)model/baseImpl/Figure#`<init>`().(number) €*number€*G
+/model/baseImpl/Figure#`<init>`().(playerNumber) €*playerNumber€*9
+(model/baseImpl/Figure#`<init>`().(color) €*color€*/
+model/baseImpl/Figure#number. €*number€*;
+#model/baseImpl/Figure#playerNumber. €*playerNumber€*-
+model/baseImpl/Figure#color. €*color€**
+model/baseImpl/Figure#copy().*copy€*4
+%model/baseImpl/Figure#copy().(number)*number€*@
++model/baseImpl/Figure#copy().(playerNumber)*playerNumber€*2
+$model/baseImpl/Figure#copy().(color)*color€*>
+'model/baseImpl/Figure#copy$default$1().*copy$default$1€*>
+'model/baseImpl/Figure#copy$default$2().*copy$default$2€*>
+'model/baseImpl/Figure#copy$default$3().*copy$default$3€*&
+model/baseImpl/Figure#_1().*_1€*&
+model/baseImpl/Figure#_2().*_2€*&
+model/baseImpl/Figure#_3().*_3€*'
+model/baseImpl/Figure.
+ *Figure€*,
+model/baseImpl/Figure.apply().*apply€*5
+&model/baseImpl/Figure.apply().(number)*number€*A
+,model/baseImpl/Figure.apply().(playerNumber)*playerNumber€*3
+%model/baseImpl/Figure.apply().(color)*color€*0
+ model/baseImpl/Figure.unapply().*unapply€*1
+%model/baseImpl/Figure.unapply().(x$1)*x$1€*2
+!model/baseImpl/Figure.toString().*toString€2
+ model/baseImpl/2
+ model/2
+ scala/swing/2
+ scala/2$
+ model/baseImpl/Figure#2/
+ !model/baseImpl/Figure#`<init>`().2
+ 
+scala/Int#2
+- 0
+scala/Int#2(
+9 >scala/swing/package.Color#2+
+ model/baseImpl/Figure#number.21
+ +#model/baseImpl/Figure#playerNumber.2*
+2 7model/baseImpl/Figure#color.PZ ACDF8C690B95D927BBE0B9BBD6D992E1

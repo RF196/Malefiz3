@@ -1,0 +1,33 @@
+
+ð	)src/main/scala/model/baseImpl/Point.scala*&
+model/baseImpl/Point# €*Point€*2
+ model/baseImpl/Point#`<init>`(). €@*<init>€*0
+#model/baseImpl/Point#`<init>`().(x) €*x€*0
+#model/baseImpl/Point#`<init>`().(y) €*y€*$
+model/baseImpl/Point#x. €*x€*$
+model/baseImpl/Point#y. €*y€*)
+model/baseImpl/Point#copy().*copy€*)
+model/baseImpl/Point#copy().(x)*x€*)
+model/baseImpl/Point#copy().(y)*y€*=
+&model/baseImpl/Point#copy$default$1().*copy$default$1€*=
+&model/baseImpl/Point#copy$default$2().*copy$default$2€*%
+model/baseImpl/Point#_1().*_1€*%
+model/baseImpl/Point#_2().*_2€*%
+model/baseImpl/Point.
+ *Point€*+
+model/baseImpl/Point.apply().*apply€**
+ model/baseImpl/Point.apply().(x)*x€**
+ model/baseImpl/Point.apply().(y)*y€*/
+model/baseImpl/Point.unapply().*unapply€*0
+$model/baseImpl/Point.unapply().(x$1)*x$1€*1
+ model/baseImpl/Point.toString().*toString€2
+ model/baseImpl/2
+ model/2#
+ model/baseImpl/Point#2.
+  model/baseImpl/Point#`<init>`().2
+ 
+scala/Int#2
+ 
+scala/Int#2%
+ model/baseImpl/Point#x.2%
+ model/baseImpl/Point#y.PZ A520DE998AB67B881576A27434931DA1

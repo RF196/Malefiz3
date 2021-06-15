@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/model/baseImpl/Reader.scala:30:27 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m      .map(_ => graph(key) += value)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        value += is not a member of Set[Int] - did you mean Set[Int].!=?[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWTextAreaPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWTextAreaPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWListPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWListPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWCheckboxPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWCheckboxPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/model/baseImpl/Reader.scala:31:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m      .getOrElse(graph(key) = Set[Int](value))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                 [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value update is not a member of Map[Int, Set[Int]] - did you mean graph.updated?[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 10.06.2021, 23:25:22[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

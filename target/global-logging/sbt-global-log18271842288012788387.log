@@ -1,0 +1,35 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 31 Scala sources to /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:14:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m      [33mif[0m !controller.gameboard[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m        .cells(inputList.head.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m        .hasWall && (inputList.head.toInt != [31m131[0m) && controller.gameboard.possibleCells.contains([0m
+[0m[[0m[31merror[0m] [0m[0m   |          [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |          value hasWall is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWTextAreaPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWTextAreaPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWListPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWListPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWCheckboxPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWCheckboxPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/model/baseImpl/Gameboard.scala:110:13 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m110 |[0m    cells.map([36mcell[0m => {[0m
+[0m[[0m[31merror[0m] [0m[0m    |    [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |    Found:    List[Unit][0m
+[0m[[0m[31merror[0m] [0m[0m    |    Required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m[31m111 |[0m      cell.contains [33mmatch[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m112 |[0m        [33mcase[0m figure: [35mFigure[0m =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m113 |[0m          [33mif[0m (figure.number == figureNumber && figure.playerNumber == playerNumber) {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m114 |[0m            [33mreturn[0m cell.number[0m
+[0m[[0m[31merror[0m] [0m[0m[31m115 |[0m          }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m116 |[0m      }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m117 |[0m    })[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 14.06.2021, 12:13:41[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

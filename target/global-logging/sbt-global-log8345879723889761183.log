@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/test-classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/test/scala/MalefizTest.scala:7:47 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m    assertEquals([31m"I was compiled by dotty :)"[0m, Malefiz.msg)[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                               [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                               Not found: Malefiz[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed 10.06.2021, 22:40:38[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

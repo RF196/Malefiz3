@@ -1,0 +1,49 @@
+
+ì-src/main/scala/model/baseImpl/Gameboard.scala*.
+model/baseImpl/Gameboard# €*	Gameboard€*6
+$model/baseImpl/Gameboard#`<init>`(). €@*<init>€*<
++model/baseImpl/Gameboard#`<init>`().(graph) €*graph€*<
++model/baseImpl/Gameboard#`<init>`().(cells) €*cells€*@
+-model/baseImpl/Gameboard#`<init>`().(players) €*players€*0
+model/baseImpl/Gameboard#graph. €*graph€*0
+model/baseImpl/Gameboard#cells. €*cells€*4
+!model/baseImpl/Gameboard#players. €*players€*-
+ model/baseImpl/Gameboard#copy().*copy€*5
+'model/baseImpl/Gameboard#copy().(graph)*graph€*5
+'model/baseImpl/Gameboard#copy().(cells)*cells€*9
+)model/baseImpl/Gameboard#copy().(players)*players€*A
+*model/baseImpl/Gameboard#copy$default$1().*copy$default$1€*A
+*model/baseImpl/Gameboard#copy$default$2().*copy$default$2€*A
+*model/baseImpl/Gameboard#copy$default$3().*copy$default$3€*)
+model/baseImpl/Gameboard#_1().*_1€*)
+model/baseImpl/Gameboard#_2().*_2€*)
+model/baseImpl/Gameboard#_3().*_3€*-
+model/baseImpl/Gameboard.
+ *	Gameboard€*/
+!model/baseImpl/Gameboard.apply().*apply€*6
+(model/baseImpl/Gameboard.apply().(graph)*graph€*6
+(model/baseImpl/Gameboard.apply().(cells)*cells€*:
+*model/baseImpl/Gameboard.apply().(players)*players€*3
+#model/baseImpl/Gameboard.unapply().*unapply€*4
+(model/baseImpl/Gameboard.unapply().(x$1)*x$1€*5
+$model/baseImpl/Gameboard.toString().*toString€2
+ model/baseImpl/2
+ model/2'
+ model/GameboardInterface.2
+ model/2'
+ model/baseImpl/Gameboard#22
+ $model/baseImpl/Gameboard#`<init>`().2
+ scala/Predef.Map#2
+  #
+scala/Int#2
+% (scala/Predef.Set#2
+) ,
+scala/Int#2!
+  scala/package.List#2"
+! %model/baseImpl/Cell#2!
+ "scala/package.List#2$
+# )model/baseImpl/Player#2'
+4 Fmodel/GameboardInterface#2-
+ model/baseImpl/Gameboard#graph.2-
+ model/baseImpl/Gameboard#cells.2/
+ !model/baseImpl/Gameboard#players.PZ 077AFFD0887FD4E98DFB8E43160A3817

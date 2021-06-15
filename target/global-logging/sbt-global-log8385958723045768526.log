@@ -1,0 +1,205 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 27 Scala sources to /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E040] Syntax Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/model/GameboardInterface.scala:34:57 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m  [33mdef[0m [36mgetPossibleCells[0m([36mstartCell[0m: [35mInt[0m, [36mdiceNumber[0m: [35mInt[0m): = [41m???[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                         [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                   an identifier expected, but '=' found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/Malefiz.scala:14:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m    players = None,[0m
+[0m[[0m[31merror[0m] [0m[0m   |              [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |              Found:    None.type[0m
+[0m[[0m[31merror[0m] [0m[0m   |              Required: List[Option[model.baseImpl.Player]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/model/baseImpl/Gameboard.scala:22:66 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m  [33moverride[0m [33mdef[0m getPossibleCells(startCell: Int, diceNumber: Int): GameBoard = [41m???[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                  [31m^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                               Not found: type GameBoard[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWTextAreaPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWTextAreaPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWListPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWListPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0merror while loading LWCheckboxPeer$,[0m
+[0m[[0m[31merror[0m] [0m[0mclass file /modules/java.desktop/sun/lwawt/LWCheckboxPeer.class is broken, reading aborted with class java.lang.UnsupportedOperationException[0m
+[0m[[0m[31merror[0m] [0m[0mcomplete[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/gamestates/Setup.scala:10:36 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m    ISetup.setup(Request(input.split([31m" "[0m)).toList, gamestate, controller)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                         [31m^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                         Found:    [1m[31mArray[0m[String][0m
+[0m[[0m[31merror[0m] [0m[0m   |                         Required: [1m[32mList[0m[String][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/IRoll.scala:17:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleFiguresTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/IRoll.scala:17:79 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                               [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISelectFigure.scala:12:40 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m        controller.gameboard.playerTurn.number =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISelectFigure.scala:14:21 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m          controller.getFigurePosition(inputList.head.toInt, inputList([31m1[0m).toInt),[0m
+[0m[[0m[31merror[0m] [0m[0m   |          [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value getFigurePosition is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISelectFigure.scala:15:31 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m          controller.gameboard.dice[0m
+[0m[[0m[31merror[0m] [0m[0m   |          [31m^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |          Found:    Option[Int][0m
+[0m[[0m[31merror[0m] [0m[0m   |          Required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISelectFigure.scala:22:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m      controller.setSelectedFigure(inputList.head.toInt, inputList([31m1[0m).toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setSelectedFigure is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISelectFigure.scala:28:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m      controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleCellsTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISelectFigure.scala:42:65 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m42 |[0m      [33mif[0m inputList.head.toInt != controller.gameboard.playerTurn.number =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                 [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:13:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m      [33mif[0m !controller.gameboard[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m        .cells(inputList.head.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m        .hasWall && (inputList.head.toInt != [31m131[0m) && controller.gameboard.possibleCells.contains([0m
+[0m[[0m[31merror[0m] [0m[0m   |          [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |          value hasWall is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:18:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m      controller.placePlayerFigure(controller.gameboard.selectedFigure.get._1, controller.gameboard.selectedFigure[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value placePlayerFigure is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:28:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m      controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleCellsTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:30:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m      controller.resetPossibleCells()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value resetPossibleCells is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:38:58 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m38 |[0m      [33mif[0m controller.gameboard.cells(inputList.head.toInt).hasWall && controller.gameboard.possibleCells[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |         value hasWall is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:42:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m42 |[0m      controller.placePlayerFigure(controller.gameboard.selectedFigure.get._1, controller.gameboard.selectedFigure[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value placePlayerFigure is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:49:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m49 |[0m      controller.setDicedNumber(Some([31m0[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  value setDicedNumber is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:50:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m50 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleFiguresTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:50:79 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m50 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                               [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:51:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m51 |[0m      controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleCellsTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:52:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m      controller.resetPossibleCells()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value resetPossibleCells is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:54:92 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m54 |[0m        controller.nextPlayer(controller.gameboard.players, controller.gameboard.playerTurn.number - [31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                            [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:65:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m65 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleFiguresTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:65:79 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m65 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                               [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:66:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m66 |[0m      controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleCellsTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:67:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m67 |[0m      controller.resetPossibleCells()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value resetPossibleCells is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:79:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m79 |[0m      controller.weHaveAWinner()[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |   value weHaveAWinner is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetFigure.scala:87:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m85 |[0m      [33mif[0m !controller.gameboard.possibleCells.contains(inputList.head.toInt) || controller.gameboard[0m
+[0m[[0m[31merror[0m] [0m[0m[31m86 |[0m        .cells(inputList.head.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m87 |[0m        .playerNumber == controller.gameboard.playerTurn.number =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                               [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |               value playerNumber is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:12:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m      [33mif[0m controller.gameboard.cells(inputList.head.toInt).wallPermission && controller.gameboard.cells(inputList.head.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m        .playerNumber == [31m0[0m && !controller.gameboard.cells(inputList.head.toInt).hasWall =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                            [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |               value playerNumber is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:12:80 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m        .playerNumber == [31m0[0m && !controller.gameboard.cells(inputList.head.toInt).hasWall =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                               [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                    value hasWall is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:13:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m      controller.placeOrRemoveWall(inputList.head.toInt, [31mtrue[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value placeOrRemoveWall is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:21:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      [33mif[0m !controller.gameboard.cells(inputList.head.toInt).wallPermission || controller.gameboard[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m        .cells(inputList.head.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m        .playerNumber != [31m0[0m || controller.gameboard.cells(inputList.head.toInt).hasWall =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                             [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |               value playerNumber is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:21:79 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m        .playerNumber != [31m0[0m || controller.gameboard.cells(inputList.head.toInt).hasWall =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                              [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                    value hasWall is not a member of model.baseImpl.Cell[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:27:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m      controller.setDicedNumber(Some([31m0[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |  value setDicedNumber is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:28:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleFiguresTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:28:79 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m      controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.number)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                               [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:29:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m      controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setPossibleCellsTrueOrFalse is not a member of controller.ControllerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetWall.scala:30:88 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m      controller.updatePlayerTurn(controller.nextPlayer(controller.gameboard.playerTurn.number - [31m1[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                        [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           value number is not a member of Option[model.baseImpl.Player][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetup.scala:13:69 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m      [33mif[0m inputList.contains([31m"start"[0m) || controller.gameboard.players.length == [31m4[0m =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                        [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |     value length is not a member of Option[List[model.baseImpl.Player]][0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Feature Warning: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetup.scala:14:55 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m14 |[0m      controller.updatePlayerTurn(controller.gameboard.players.head)[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |                                  [33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |Use of implicit conversion [33mmethod[0m [35moption2Iterable[0m in [33mobject[0m [35mOption[0m should be enabled[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |by adding the import clause 'import scala.language.implicitConversions'[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |or by setting the compiler option -language:implicitConversions.[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |See the Scala docs for value scala.language.implicitConversions for a discussion[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |why the feature should be explicitly enabled.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/robert/IdeaProjects/Malefiz3/src/main/scala/controller/instructions/ISetup.scala:14:63 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m      controller.updatePlayerTurn(controller.gameboard.players.head)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                  [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                  Found:    [1m[31mList[0m[1m[31m[[0mmodel.baseImpl.Player[1m[31m][0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                  Required: model.baseImpl.Player[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m45 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed 11.06.2021, 12:22:36[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

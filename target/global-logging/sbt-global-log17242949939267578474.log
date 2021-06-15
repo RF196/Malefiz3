@@ -1,0 +1,145 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addPluginSbtFile="""/private/var/folders/8v/z6d80jsn05sd8fmwwj8sxxkr0000gn/T/idea1.sbt"""), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addPluginSbtFile="""/private/var/folders/8v/z6d80jsn05sd8fmwwj8sxxkr0000gn/T/idea1.sbt""", None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.5.3 (Oracle Corporation Java 16.0.1)[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: plugins took 77.497693ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: defsScala took 0.417508ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/robert/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/robert/.sbt/1.0/plugins, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 18.710925 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.resolveProject(global-plugins) took 38.944264ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/robert/.sbt/1.0/plugins, plugins: List(<none>))) took 81.124458ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/robert/.sbt/1.0/plugins, returning: (global-plugins)[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: loadedProjectsRaw took 102.282809ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: cleanEvalClasses took 0.196637ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit(file:/Users/robert/.sbt/1.0/plugins/, ...) took 188.071823ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: load took 363.86698ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: resolveProjects took 4.473445ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: finalTransforms took 48.792767ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: config.delegates took 6.700006ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: Def.make(settings)... took 277.49548ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: structureIndex took 86.11398ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.apply: mkStreams took 1.118593ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading global plugins from /Users/robert/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 1994.215074ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 19.337833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.003401ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/robert/IdeaProjects/Malefiz3/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 4.689625ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/robert/IdeaProjects/Malefiz3/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.331968 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project malefiz3-build from plugins.sbt,idea1.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(malefiz3-build) took 2.513463ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id malefiz3-build, base: /Users/robert/IdeaProjects/Malefiz3/project, plugins: List(<none>))) took 4.378265ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/robert/IdeaProjects/Malefiz3/project, returning: (malefiz3-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 1893.608086ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 3.723605ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/Users/robert/IdeaProjects/Malefiz3/project/, ...) took 1917.410748ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 1918.672353ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 0.108049ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 11.524116ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 0.463698ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 77.847873ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 30.095525ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.002049ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/robert/IdeaProjects/Malefiz3/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 2965.185327ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.003065ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/robert/IdeaProjects/Malefiz3[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.193683ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(dotty.tools.sbtplugin.DottyIDEPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(dotty.tools.sbtplugin.DottyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(dotty.tools.sbtplugin.DottyIDEPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(dotty.tools.sbtplugin.DottyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,dotty.tools.sbtplugin.DottyPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,dotty.tools.sbtplugin.DottyIDEPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 2.046518 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 29.841381ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /Users/robert/IdeaProjects/Malefiz3, plugins: List(<none>))) took 33.266163ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/robert/IdeaProjects/Malefiz3, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 811.593427ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 2.705341ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/Users/robert/IdeaProjects/Malefiz3/, ...) took 3780.115386ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 3781.39282ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.087923ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 23.753986ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 0.298777ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 69.438397ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 26.978178ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.002253ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to Malefiz3 (in build file:/Users/robert/IdeaProjects/Malefiz3/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(; set ideaPort in Global := 49253 ; idea-shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(set ideaPort in Global := 49253, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mDefining Global / ideaPort[0m
+[0m[[0m[0minfo[0m] [0m[0mThe new value will be used by Compile / compile, Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mDefining [0m
+[0m[[0m[0mdebug[0m] [0m[0m	Global / ideaPort[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe new value will be used by [0m
+[0m[[0m[0mdebug[0m] [0m[0m	Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test / compile[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to Malefiz3 (in build file:/Users/robert/IdeaProjects/Malefiz3/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

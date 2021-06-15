@@ -1,0 +1,106 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0m## Exception when compiling 34 sources to /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.IllegalArgumentException: requirement failed: Source file '/Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/Malefiz.tasty' does not exist.[0m
+[0m[[0m[31merror[0m] [0m[0mscala.Predef$.require(Predef.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.io.IO$.copyFile(IO.scala:895)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.io.IO$.move(IO.scala:1118)[0m
+[0m[[0m[31merror[0m] [0m[0mdotty.tools.sbtplugin.TastyFileManager.move(TastyFileManager.scala:72)[0m
+[0m[[0m[31merror[0m] [0m[0mdotty.tools.sbtplugin.TastyFileManager.$anonfun$delete$2(TastyFileManager.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)[0m
+[0m[[0m[31merror[0m] [0m[0mdotty.tools.sbtplugin.TastyFileManager.delete(TastyFileManager.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0mxsbti.compile.ClassFileManager.delete(ClassFileManager.java:36)[0m
+[0m[[0m[31merror[0m] [0m[0mxsbti.compile.WrappedClassFileManager.delete(WrappedClassFileManager.java:45)[0m
+[0m[[0m[31merror[0m] [0m[0mxsbti.compile.WrappedClassFileManager.delete(WrappedClassFileManager.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCommon$.pruneClassFilesOfInvalidations(IncrementalCommon.scala:840)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCommon$CycleState.next(IncrementalCommon.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCommon$$anon$1.next(IncrementalCommon.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCommon$$anon$1.next(IncrementalCommon.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCommon.cycle(IncrementalCommon.scala:261)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.$anonfun$incrementalCompile$8(Incremental.scala:412)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.withClassfileManager(Incremental.scala:499)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.incrementalCompile(Incremental.scala:399)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.Incremental$.apply(Incremental.scala:166)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.compileInternal(IncrementalCompilerImpl.scala:528)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileIncrementally$1(IncrementalCompilerImpl.scala:482)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.handleCompilationError(IncrementalCompilerImpl.scala:332)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.compileIncrementally(IncrementalCompilerImpl.scala:420)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.IncrementalCompilerImpl.compile(IncrementalCompilerImpl.scala:137)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Defaults$.compileIncrementalTaskImpl(Defaults.scala:2362)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Defaults$.$anonfun$compileIncrementalTask$2(Defaults.scala:2319)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.io.Retry$.apply(Retry.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.io.Retry$.apply(Retry.scala:28)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.io.Retry$.apply(Retry.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.server.BspCompileTask$.compute(BspCompileTask.scala:31)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Defaults$.$anonfun$compileIncrementalTask$1(Defaults.scala:2315)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.lang.Thread.run(Thread.java:831)[0m
+[0m[[0m[31merror[0m] [0m[0m           [0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.IllegalArgumentException: requirement failed: Source file '/Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/Malefiz.tasty' does not exist.[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Predef$.require(Predef.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.copyFile(IO.scala:895)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.io.IO$.move(IO.scala:1118)[0m
+[0m[[0m[31merror[0m] [0m[0m	at dotty.tools.sbtplugin.TastyFileManager.move(TastyFileManager.scala:72)[0m
+[0m[[0m[31merror[0m] [0m[0m	at dotty.tools.sbtplugin.TastyFileManager.$anonfun$delete$2(TastyFileManager.scala:39)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)[0m
+[0m[[0m[31merror[0m] [0m[0m	at dotty.tools.sbtplugin.TastyFileManager.delete(TastyFileManager.scala:38)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbti.compile.ClassFileManager.delete(ClassFileManager.java:36)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbti.compile.WrappedClassFileManager.delete(WrappedClassFileManager.java:45)[0m
+[0m[[0m[31merror[0m] [0m[0m	at xsbti.compile.WrappedClassFileManager.delete(WrappedClassFileManager.java:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCommon$.pruneClassFilesOfInvalidations(IncrementalCommon.scala:840)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCommon$CycleState.next(IncrementalCommon.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCommon$$anon$1.next(IncrementalCommon.scala:56)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCommon$$anon$1.next(IncrementalCommon.scala:52)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCommon.cycle(IncrementalCommon.scala:261)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.$anonfun$incrementalCompile$8(Incremental.scala:412)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.withClassfileManager(Incremental.scala:499)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.incrementalCompile(Incremental.scala:399)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.Incremental$.apply(Incremental.scala:166)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.compileInternal(IncrementalCompilerImpl.scala:528)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileIncrementally$1(IncrementalCompilerImpl.scala:482)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.handleCompilationError(IncrementalCompilerImpl.scala:332)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.compileIncrementally(IncrementalCompilerImpl.scala:420)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.inc.IncrementalCompilerImpl.compile(IncrementalCompilerImpl.scala:137)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.compileIncrementalTaskImpl(Defaults.scala:2362)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$compileIncrementalTask$2(Defaults.scala:2319)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.io.Retry$.apply(Retry.scala:46)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.io.Retry$.apply(Retry.scala:28)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.io.Retry$.apply(Retry.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.server.BspCompileTask$.compute(BspCompileTask.scala:31)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$compileIncrementalTask$1(Defaults.scala:2315)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:831)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) java.lang.IllegalArgumentException: requirement failed: Source file '/Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/Malefiz.tasty' does not exist.[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 14.06.2021, 19:32:07[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

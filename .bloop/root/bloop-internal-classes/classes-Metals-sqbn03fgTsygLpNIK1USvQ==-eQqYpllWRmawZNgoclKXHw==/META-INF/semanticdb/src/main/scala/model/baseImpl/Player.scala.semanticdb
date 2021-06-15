@@ -1,0 +1,42 @@
+
+ *src/main/scala/model/baseImpl/Player.scala*(
+model/baseImpl/Player# €*Player€*3
+!model/baseImpl/Player#`<init>`(). €@*<init>€*;
+)model/baseImpl/Player#`<init>`().(number) €*number€*7
+'model/baseImpl/Player#`<init>`().(name) €*name€*9
+(model/baseImpl/Player#`<init>`().(color) €*color€*/
+model/baseImpl/Player#number. €*number€*+
+model/baseImpl/Player#name. €*name€*-
+model/baseImpl/Player#color. €*color€**
+model/baseImpl/Player#copy().*copy€*4
+%model/baseImpl/Player#copy().(number)*number€*0
+#model/baseImpl/Player#copy().(name)*name€*2
+$model/baseImpl/Player#copy().(color)*color€*>
+'model/baseImpl/Player#copy$default$1().*copy$default$1€*>
+'model/baseImpl/Player#copy$default$2().*copy$default$2€*>
+'model/baseImpl/Player#copy$default$3().*copy$default$3€*&
+model/baseImpl/Player#_1().*_1€*&
+model/baseImpl/Player#_2().*_2€*&
+model/baseImpl/Player#_3().*_3€*'
+model/baseImpl/Player.
+ *Player€*,
+model/baseImpl/Player.apply().*apply€*5
+&model/baseImpl/Player.apply().(number)*number€*1
+$model/baseImpl/Player.apply().(name)*name€*3
+%model/baseImpl/Player.apply().(color)*color€*0
+ model/baseImpl/Player.unapply().*unapply€*1
+%model/baseImpl/Player.unapply().(x$1)*x$1€*2
+!model/baseImpl/Player.toString().*toString€2
+ model/baseImpl/2
+ model/2
+ scala/swing/2
+ scala/2$
+ model/baseImpl/Player#2/
+ !model/baseImpl/Player#`<init>`().2
+ 
+scala/Int#2"
+% +scala/Predef.String#2(
+4 9scala/swing/package.Color#2+
+ model/baseImpl/Player#number.2)
+ #model/baseImpl/Player#name.2*
+- 2model/baseImpl/Player#color.PZ 7219D8056B3876BFED3776D000F8CC5D
