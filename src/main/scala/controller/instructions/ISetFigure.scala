@@ -9,16 +9,17 @@ object ISetFigure extends InstructionInterface {
   
   val set1: Handler0 = {
     case Request(inputList, gamestate, controller) =>
+      val playerTurn = controller.gameboard.playerTurn.get.number
+      val playerFigure = controller.gameboard.selectedFigure.get
+      val cell = controller.gameboard.cells(inputList.head.toInt)
+      val number = inputList.head.toInt
       controller.gameboard.cells(inputList.head.toInt).contains match {
         case figure: Figure =>
-          val playerTurn = controller.gameboard.playerTurn.get.number
-          val cell = controller.gameboard.cells(inputList.head.toInt)
-          val number = inputList.head.toInt
-          if (number != 131 && controller.gameboard.possibleCells.contains(number) && figure.playerNumber != 
-            playerTurn)
-            controller.placePlayerFigure(figure.playerNumber, figure.number, inputList.head.toInt)
+          if (number != 131 && controller.gameboard.possibleCells.contains(number) && figure.playerNumber != playerTurn)
+            controller.placePlayerFigure(playerFigure.playerNumber, playerFigure.number, inputList.head.toInt)
             Request(inputList, gamestate, controller)
         case string: String =>
+          controller.placePlayerFigure(playerFigure.playerNumber, playerFigure.number, inputList.head.toInt)
           Request(inputList, gamestate, controller)
       }
       Request(inputList, gamestate, controller)
