@@ -31,9 +31,8 @@ trait GameboardInterface:
   
   // Methods
   
-
   def buildPlayerString(): Option[String]
-  
+
   def buildGameBoardString(start: Int): String
 
   def buildGameBoard(): Option[String]
@@ -41,51 +40,72 @@ trait GameboardInterface:
   def buildGameBoardInfo(): Option[String]
 
   def buildCompleteBoard(cellList: List[Cell]): Option[String]
-  
-  
-  def getPossibleCells(startCell: Int, diceNumber: Int): Gameboard
 
-  def updateCells(newCells: List[Cell]): Gameboard
+  def setPlayerTurn(player: Option[Player]): Gameboard
 
-  //def updatePlayers(newPlayers: List[Player]): Gameboard
+  def setSelectedFigure(playerNumber: Int, figureNumber: Int): Gameboard
 
-  def updatePlayerTurn(player: Player): Gameboard
+  def setStateNumber(stateNumber: Int): Gameboard
 
-  def updateSelectedFigure(newFigure: Figure): Gameboard
+  def setStatementStatus(statement: Statements): Gameboard
+
+  def setPossibleCell(possibleCells: Set[Int]): Gameboard
+
+  def rollDice(): Gameboard
 
   def setDicedNumber(dicedNumber: Option[Int]): Gameboard
 
-  def rollDice: Gameboard
-
-  def updatePossibleCells(cells: Set[Int]): Gameboard
-
   def clearPossibleCells: Gameboard
 
-  def updateStateNumber(newStateNumber: Int): Gameboard
+  def getPossibleCells(startCellNumber: Int, cube: Int): Gameboard
 
-  def updateStatementStatus(statements: Statements): Gameboard
-
-  def createPlayer(name: String): Gameboard
-
-  def nextPlayer(playerNumber: Int): Player
-
-  def getPlayerFigure(playerNumber: Int, figureNumber: Int): Int
 
   def setPossibleCellsTrueOrFalse(listOfCellNumbers: List[Int], state: String): Gameboard
 
-  def setPossibleFiguresTrueOrFalse(cellNumber: Int, stateNr: String): Gameboard
-  def setPossibleFigures(cellListLength: Int, cellNumber: Int, cellList: List[Cell])(markFigures: Int => Cell): List[Cell]
-  def markFigure(boolean: Boolean)(cellNumber: Int): Cell
+  def setPossibleCells(cellListLength: Int, listOfCellNumbers: List[Int], listOfCells: List[Cell])(markCells: Int => Cell): List[Cell]
+
+  def markCell(boolean: Boolean)(cellNumber: Int): Cell
+
+
+  def removeActualPlayerAndFigureFromCell(playerNumber: Int, figureNumber: Int): Gameboard
+
+  def removePlayerFigureOnCell(cellNumber: Int): Cell
+
+  def removePlayerOnCell(cellNumber: Int): Cell
+
 
   def setWall(cellNumber: Int): Gameboard
-  
-  def removeWall(n: Int): Gameboard
 
-  def placeFigure(cellNumber: Int, figureNumber: Int, playerNumber: Int): Gameboard
+  def updateListWall(cellNumber: Int): List[Cell]
 
-  def removeFigure(playerNumber: Int, figureNumber: Int): Gameboard
-  
+  def placeWall(cellNumber: Int): Cell
+
+
+  def removeWall(cellNumber: Int): Gameboard
+
+  def removeListWall(cellNumber: Int): List[Cell]
+
+  def setHasWallFalse(cellNumber: Int): Cell
+
+
+  def createPlayer(text: String): Gameboard
+
+  def nextPlayer(playerList: List[Option[Player]], playerNumber: Int): Option[Player]
+
+  def placeFigure(playerNumber: Int, figureNumber: Int, cellNumber: Int): Gameboard
+
+  def getPlayerFigure(playerNumber: Int, figureNumber: Int): Int
+
   def getHomeNr(playerNumber: Int, figureNumber: Int): Int
+  
+  def setPossibleFiguresTrueOrFalse(cellNumber: Int, stateNr: String): Gameboard
+
+  def setPossibleFigures(cellListLength: Int, cellNumber: Int, cellList: List[Cell])(function: Int => Cell): List[Cell]
+
+  def markFigure(boolean: Boolean)(cellNumber: Int): Cell
 
 
+trait DiceInterface:
+  
+  def rollDice: Option[Int]
 

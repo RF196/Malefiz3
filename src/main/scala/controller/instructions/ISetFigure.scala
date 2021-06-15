@@ -6,19 +6,20 @@ import controller.Statements._
 import model.baseImpl.Figure
 
 object ISetFigure extends InstructionInterface {
-
+  
   val set1: Handler0 = {
     case Request(inputList, gamestate, controller) =>
-      
-      val f = controller.gameboard.selectedFigure.get
-      
       controller.gameboard.cells(inputList.head.toInt).contains match {
         case figure: Figure =>
+          val playerTurn = controller.gameboard.playerTurn.get.number
+          val cell = controller.gameboard.cells(inputList.head.toInt)
+          val number = inputList.head.toInt
+          if (number != 131 && controller.gameboard.possibleCells.contains(number) && figure.playerNumber != 
+            playerTurn)
+            controller.placePlayerFigure(figure.playerNumber, figure.number, inputList.head.toInt)
+            Request(inputList, gamestate, controller)
         case string: String =>
-          if (string == "EMPTY") {
-            if ((inputList.head.toInt != 131) && controller.gameboard.possibleCells.contains(inputList.head.toInt))
-              controller.placePlayerFigure(f.playerNumber, f.number, inputList.head.toInt)
-          }
+          Request(inputList, gamestate, controller)
       }
       Request(inputList, gamestate, controller)
   }
@@ -30,7 +31,7 @@ object ISetFigure extends InstructionInterface {
       ).toInt == controller.gameboard.selectedFigure.get._2 =>
       controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)
 
-      controller.resetPossibleCells
+      controller.resetPossibleCells()
       gameState.nextState(SelectFigure(controller))
       controller.setStatementStatus(changeFigure)
       Statements.value(StatementRequest(controller))
@@ -51,15 +52,15 @@ object ISetFigure extends InstructionInterface {
   }
 
   val set3: Handler1 = {
-    case Request(inputList, gamestate, controller) =>
+    case Request(inputList, gameState, controller) =>
       controller.setDicedNumber(Some(0))
       controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.get.number)
       controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)
-      controller.resetPossibleCells
-      controller.updatePlayerTurn(
-        controller.nextPlayer(controller.gameboard.playerTurn.get.number - 1)
+      controller.resetPossibleCells()
+      controller.setPlayersTurn(
+        controller.nextPlayer(controller.gameboard.players, controller.gameboard.playerTurn.get.number - 1)
       )
-      gamestate.nextState(Roll(controller))
+      gameState.nextState(Roll(controller))
       controller.setStatementStatus(nextPlayer)
       Statements.value(StatementRequest(controller))
   }
@@ -70,7 +71,7 @@ object ISetFigure extends InstructionInterface {
       controller.setStatementStatus(wall)
       controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.get.number)
       controller.setPossibleCellsTrueOrFalse(controller.gameboard.possibleCells.toList)
-      controller.resetPossibleCells
+      controller.resetPossibleCells()
       Statements.value(StatementRequest(controller))
   }
   val set5: Handler0 = {

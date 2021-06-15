@@ -10,7 +10,7 @@ object ISelectFigure extends InstructionInterface:
     case Request(inputList, gamestate, controller)
       if inputList.head.toInt == controller.gameboard.playerTurn.get.number =>
         controller.calculatePath(
-          controller.getPlayerFigureLocation(inputList.head.toInt, inputList(1).toInt),
+          controller.getFigurePosition(inputList.head.toInt, inputList(1).toInt),
           controller.gameboard.dice.get
         )
       Request(inputList, gamestate, controller)
@@ -18,8 +18,7 @@ object ISelectFigure extends InstructionInterface:
 
   val select2: Handler0 = {
     case Request(inputList, gamestate, controller) =>
-      controller.setSelectedFigure(controller.gameboard.playerTurn.get, 
-        inputList(0).toInt)
+      controller.setSelectedFigure(inputList.head.toInt, inputList(1).toInt)
       Request(inputList, gamestate, controller)
   }
 

@@ -114,7 +114,7 @@ class PlayerGui(controller: ControllerInterface) extends Frame {
   reactions += {
     case ButtonClicked(`continueButton`) =>
       val players = List(playerOneName.text, playerTwoName.text, playerThreeName.text, playerFourName.text)
-      players.map(name => {
+      players.foreach(name => {
         if (name != "") {
           controller.execute("n " + name)
         }

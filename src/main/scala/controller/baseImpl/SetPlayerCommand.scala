@@ -16,8 +16,8 @@ class SetPlayerCommand(playerNumber: Int, playerFigure: Int, cellNumber: Int, co
   var mS: State[Gamestate] = controller.state.currentState
 
   override def doStep(): Unit = {
-    
-    controller.gameboard = controller.gameboard.removeFigure(playerNumber, playerFigure)
+    controller.gameboard = controller.gameboard.removeActualPlayerAndFigureFromCell(playerNumber, playerFigure)
+
     val p = controller.gameboard.players(playerNumber - 1).get
     
     controller.gameboard.cells(cellNumber).contains match
@@ -40,7 +40,7 @@ class SetPlayerCommand(playerNumber: Int, playerFigure: Int, cellNumber: Int, co
     controller.gameboard = memento
     controller.setDicedNumber(Some(mDicedNumber))
     controller.state.currentState = mS
-    controller.updatePlayerTurn(mPlayersTurn)
+    controller.setPlayersTurn(Some(mPlayersTurn))
     controller.setStatementStatus(mStatementStatus)
 
     memento = new_memento

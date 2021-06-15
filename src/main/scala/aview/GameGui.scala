@@ -323,7 +323,6 @@ class GameGui(controller: ControllerInterface) extends Frame {
         Statements.value(StatementRequest(controller)),
         optionType = Dialog.Options.Default
       )
-      controller.resetGameBoard()
       playerArea.text = ""
       visible = false
       /*

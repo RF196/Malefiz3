@@ -266,6 +266,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/GameboardInterface.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/ReaderInterface.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/ReaderInterface.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model/DiceInterface.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/DiceInterface.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model/DiceInterface.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/DiceInterface.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/ReaderInterface.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/ReaderInterface.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl[0m
@@ -282,10 +286,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Reader.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Gameboard$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Gameboard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Dice$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Dice$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Reader$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Reader$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Gameboard.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Gameboard.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Dice.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Dice.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Point.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Point.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Point$.class[0m
@@ -304,6 +312,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Gameboard.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Point.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Point.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Dice.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Dice.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model/baseImpl/Figure$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/robert/IdeaProjects/Malefiz3/target/scala-0.27/classes/model/baseImpl/Figure$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	malefiz.tasty[0m
