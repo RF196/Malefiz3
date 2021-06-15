@@ -35,9 +35,12 @@ case class Reader() extends ReaderInterface:
       .map(line => line.split(" "))
       .map {
         case Array(cn, pn, fn, wp, hw, x, y, pF, pC) =>
-          if (hw == "true") then
-          Cell(cn.toInt, "WALL", wp.toBoolean, Point(x.toInt, y.toInt), pF.toBoolean, pC.toBoolean)
+          if pn != "0" then
+            Cell(cn.toInt, Figure(fn.toInt, pn.toInt), wp.toBoolean, Point(x.toInt, y.toInt), pF.toBoolean, pC
+              .toBoolean)
+          else if hw == "true" then
+            Cell(cn.toInt, "WALL", wp.toBoolean, Point(x.toInt, y.toInt), pF.toBoolean, pC.toBoolean)
           else 
-          Cell(cn.toInt, "Empty", wp.toBoolean, Point(x.toInt, y.toInt), pF.toBoolean, pC.toBoolean)
+            Cell(cn.toInt, "Empty", wp.toBoolean, Point(x.toInt, y.toInt), pF.toBoolean, pC.toBoolean)
       }.toList
       cells

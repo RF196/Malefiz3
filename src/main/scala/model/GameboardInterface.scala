@@ -30,8 +30,20 @@ trait GameboardInterface:
   def statementStatus: Option[Statements]
   
   // Methods
+  
 
-  def getPossibleCells(startCell: Int, diceNumber: Int): Gameboard = ???
+  def buildPlayerString(): Option[String]
+  
+  def buildGameBoardString(start: Int): String
+
+  def buildGameBoard(): Option[String]
+
+  def buildGameBoardInfo(): Option[String]
+
+  def buildCompleteBoard(cellList: List[Cell]): Option[String]
+  
+  
+  def getPossibleCells(startCell: Int, diceNumber: Int): Gameboard
 
   def updateCells(newCells: List[Cell]): Gameboard
 
@@ -53,7 +65,7 @@ trait GameboardInterface:
 
   def updateStatementStatus(statements: Statements): Gameboard
 
-  def createPlayer(name: String, color: Color): Gameboard
+  def createPlayer(name: String): Gameboard
 
   def nextPlayer(playerNumber: Int): Player
 
@@ -69,10 +81,11 @@ trait GameboardInterface:
   
   def removeWall(n: Int): Gameboard
 
-  def placeFigure(cellNumber: Int, figureNumber: Int, playerNumber: Int, color: Color): Gameboard
+  def placeFigure(cellNumber: Int, figureNumber: Int, playerNumber: Int): Gameboard
 
   def removeFigure(playerNumber: Int, figureNumber: Int): Gameboard
-
-  // def placeFigure(figureNumber: Int, cellNumber: Int, color: Color): Gameboard
   
   def getHomeNr(playerNumber: Int, figureNumber: Int): Int
+
+
+

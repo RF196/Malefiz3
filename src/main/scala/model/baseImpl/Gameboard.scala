@@ -17,9 +17,81 @@ case class Gameboard(graph: Map[Int, Set[Int]],
                      dice: Option[Int],
                      possibleCells: Set[Int] = Set.empty,
                      stateNumber: Option[Int],
-                     statementStatus: Option[Statements])extends GameboardInterface:
+                     statementStatus: Option[Statements])extends GameboardInterface :
 
-  override def getPossibleCells(startCell: Int, diceNumber: Int): Gameboard = ???
+
+  override def buildPlayerString(): Option[String] = {
+    Some(
+      s"""|${cells.slice(0, 20).mkString("")}
+          |""".stripMargin)
+  }
+
+  val buildRow = (start: Int, stop: Int) => start match {
+    case 130 => s"""|${cells.slice(start, stop).mkString("")}
+                    |""".stripMargin
+    case _ => buildGameBoardString(stop) +
+      s"""|${cells.slice(start, stop).mkString("")}
+          |""".stripMargin
+  }
+
+  override def buildGameBoardString(start: Int): String = {
+    start match {
+      case 20 | 42 | 94 | 113 => buildRow(start, start + 17)
+      case 37 => buildRow(start, start + 5)
+      case 59 => buildRow(start, start + 4)
+      case 63 => buildRow(start, start + 13)
+      case 76 | 87 | 111 => buildRow(start, start + 2)
+      case 78 => buildRow(start, start + 9)
+      case 89 => buildRow(start, start + 5)
+      case 93 => buildRow(start, start + 1)
+      case 130 => buildRow(start, start + 1)
+    }
+  }
+
+  override def buildGameBoard(): Option[String] = Some(buildGameBoardString(20))
+
+  override def buildGameBoardInfo(): Option[String] = {
+    val string = new StringBuilder("Malefiz-GameBoard\n\n")
+    string.append("Players: ")
+    players.flatMap(player => player.map(x => string.append(x.toString + " / ")))
+    string.append("\n" + "Players turn: " + playerTurn.getOrElse("No registered players").toString + "\n")
+    string.append("Dice: " + dice.getOrElse("Dice is not rolled yet").toString + "\n")
+    string.append("Possible Cells: " + possibleCells.toString + "\n")
+    string.append("Status: " + statementStatus.get.toString + "\n")
+    Some(string.toString())
+  }
+
+
+  override def buildCompleteBoard(cellList: List[Cell]): Option[String] = {
+    for {
+      gameBoardString <- buildGameBoard()
+      playerString <- buildPlayerString()
+      infoString <- buildGameBoardInfo()
+    } yield gameBoardString + playerString + infoString
+  }
+
+
+  override def getPossibleCells(startCell: Int, diceNumber: Int): Gameboard =
+
+    var found: Set[Int] = Set[Int]()
+    var needed: Set[Int] = Set[Int]()
+
+      def recurse(currentCell: Int, diceNumber: Int): Unit =
+
+        cells(currentCell).contains match
+          case figure: Figure =>
+          case string: String =>
+            if string == "WALL" && diceNumber == 0 then
+              needed += currentCell
+            if string == "WALL" && diceNumber != 0 then
+              return
+      
+        found += currentCell
+        graph(currentCell)
+          .foreach(cell => if (!found.contains(cell) && diceNumber != 0) recurse(cell, diceNumber - 1))
+    
+    recurse(startCell, diceNumber)
+    copy(possibleCells = needed)
 
   override def updateCells(newCells: List[Cell]): Gameboard = copy(cells = newCells)
 
@@ -30,7 +102,7 @@ case class Gameboard(graph: Map[Int, Set[Int]],
   override def updateSelectedFigure(newFigure: Figure): Gameboard = copy(selectedFigure = Option(newFigure))
 
   override def setDicedNumber(dicedNumber: Option[Int]): Gameboard = copy(dice = dicedNumber)
-  
+
   override def rollDice: Gameboard = copy(dice = Option(Random.nextInt(6) + 1))
 
   override def updatePossibleCells(cells: Set[Int]): Gameboard = copy(possibleCells = cells)
@@ -41,9 +113,9 @@ case class Gameboard(graph: Map[Int, Set[Int]],
 
   override def updateStatementStatus(statements: Statements): Gameboard = copy(statementStatus = Option(statements))
 
-  override def createPlayer(name: String, color: Color): Gameboard =
-    copy(players = players :+ Some(Player(players.length + 1, name, color)))
-    
+  override def createPlayer(name: String): Gameboard =
+    copy(players = players :+ Some(Player(players.length + 1, name)))
+
   override def nextPlayer(playerNumber: Int): Player =
     if (playerNumber == players.length - 1)
       players.head.get
@@ -54,7 +126,7 @@ case class Gameboard(graph: Map[Int, Set[Int]],
     state match {
       case "2" => copy(cells = setPossibleCells(cells.length - 1, cellNumbers, cells)(markCell(boolean =
         true)))
-      case _ => copy(cells = setPossibleCells(cells.length - 1, cellNumbers, cells)(markCell(boolean = 
+      case _ => copy(cells = setPossibleCells(cells.length - 1, cellNumbers, cells)(markCell(boolean =
         false)))
     }
   }
@@ -69,12 +141,12 @@ case class Gameboard(graph: Map[Int, Set[Int]],
       setPossibleCells(cellListLength - 1, listOfCellNumbers, listOfCells)(markCells)
 
   def markCell(boolean: Boolean)(cellNumber: Int): Cell = cells(cellNumber).copy(possibleCells = boolean)
-  
-  
+
+
   override def setPossibleFiguresTrueOrFalse(cellNumber: Int, stateNr: String): Gameboard = {
     stateNr match {
       case "1" => copy(cells = setPossibleFigures(cells.length - 1, cellNumber, cells)(markFigure(boolean = true)))
-      case _ => copy(cells =  setPossibleFigures(cells.length - 1, cellNumber, cells)(markFigure(boolean = false)))
+      case _ => copy(cells = setPossibleFigures(cells.length - 1, cellNumber, cells)(markFigure(boolean = false)))
     }
   }
 
@@ -107,7 +179,7 @@ case class Gameboard(graph: Map[Int, Set[Int]],
   }
 
   override def getPlayerFigure(playerNumber: Int, figureNumber: Int): Int = {
-    var a  = 0;
+    var a = 0;
     cells.map(cell => {
       cell.contains match {
         case figure: Figure =>
@@ -123,18 +195,18 @@ case class Gameboard(graph: Map[Int, Set[Int]],
   override def removeWall(cellNumber: Int): Gameboard =
     val newCell = cells(cellNumber).copy(contains = "EMPTY")
     val newCellList = cells.updated(cellNumber, newCell)
-    copy(cells =  newCellList)
-  
-  override def placeFigure(cellNumber: Int, figureNumber: Int, playerNumber: Int, color: Color): Gameboard =
-    val a = cells(cellNumber).copy(contains = Figure(figureNumber, playerNumber, color))
+    copy(cells = newCellList)
+
+  override def placeFigure(cellNumber: Int, figureNumber: Int, playerNumber: Int): Gameboard =
+    val a = cells(cellNumber).copy(contains = Figure(figureNumber, playerNumber))
     copy(cells = cells.updated(cellNumber, a))
-  
+
   override def removeFigure(playerNumber: Int, figureNumber: Int): Gameboard =
     val cellNumber = getPlayerFigure(playerNumber, figureNumber)
     val newCell = cells(cellNumber).copy(contains = "EMPTY")
     copy(cells = cells.updated(cellNumber, newCell))
-  
-  
+
+
   override def getHomeNr(playerNumber: Int, figureNumber: Int): Int =
     if (playerNumber == 1 && figureNumber == 1)
       0

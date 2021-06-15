@@ -17,14 +17,17 @@ class Controller(var gameboard: Gameboard) extends ControllerInterface with Publ
   val mementoGameBoard: GameboardInterface = gameboard
   val undoManager = new UndoManager
   
+
+  override def gameBoardToString: Option[String] = gameboard.buildCompleteBoard(gameboard.cells)
+  
   override def getGameState: Gamestate = this.state
   
   override def execute(input: String): Unit = state.run(input)
 
   override def checkInput(input: String): Either[String, String] =
     if (state.currentState.toString == "1")
-      if(input.split(" ").toList.size != 3)
-        return Left("Bitte Spieler in Form von : 'n Spielername Farbe' eintippen und mit 'n start game' dann starten!")
+      if(input.split(" ").toList.size != 2)
+        return Left("Bitte Spieler in Form von : 'n Spielername' eintippen und mit 'n start' dann starten!")
       else
         return Right(input)
     else
@@ -39,14 +42,14 @@ class Controller(var gameboard: Gameboard) extends ControllerInterface with Publ
     gameboard = gameboard.updateStatementStatus(statement)
     publish(new GameBoardChanged)
   
-  override def createPlayer(name: String, color: Color): Unit =
-    println("Lege Spieler: " + name + "an")
-    gameboard = gameboard.createPlayer(name, color)
-    publish(new GameBoardChanged)
+  override def createPlayer(name: String): Unit =
+    println("Spieler: " + name + " wurde erfolgreich angelegt")
+    gameboard = gameboard.createPlayer(name)
   
   override def updatePlayerTurn(player: Player): Unit =
     gameboard = gameboard.updatePlayerTurn(player)
     publish(new GameBoardChanged)
+    print(gameBoardToString.get)
 
   override def nextPlayer(playerNumber: Int) : Player =
     gameboard.nextPlayer(playerNumber)
@@ -82,7 +85,7 @@ class Controller(var gameboard: Gameboard) extends ControllerInterface with Publ
   }
 
   override def setSelectedFigure(player: Player, figureNumber: Int): Unit =
-    gameboard = gameboard.updateSelectedFigure(Figure(figureNumber, player.number, player.color))
+    gameboard = gameboard.updateSelectedFigure(Figure(figureNumber, player.number))
     publish(new GameBoardChanged)
 
   override def placeOrRemoveWall(n: Int, boolean: Boolean): Unit = {

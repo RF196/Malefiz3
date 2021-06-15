@@ -15,6 +15,7 @@ object IRoll extends InstructionInterface:
   val roll2: Handler0 = {
     case Request(inputList, gameState, controller) =>
       controller.setPossibleFiguresTrueOrFalse(controller.gameboard.playerTurn.get.number)
+      
       Request(inputList, gameState, controller)
   }
 

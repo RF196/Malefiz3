@@ -21,12 +21,12 @@ class SetPlayerCommand(playerNumber: Int, playerFigure: Int, cellNumber: Int, co
     val p = controller.gameboard.players(playerNumber - 1).get
     
     controller.gameboard.cells(cellNumber).contains match
-      case f: Figure => controller.gameboard.placeFigure(cellNumber, playerFigure, p.number, p.color)
+      case f: Figure => controller.gameboard.placeFigure(cellNumber, playerFigure, p.number)
       case s: String => 
         if (s == "WALL") then
           controller.placeOrRemoveWall(cellNumber, boolean = false)
         else
-         controller.gameboard.placeFigure(cellNumber, playerFigure, p.number, p.color)
+         controller.gameboard.placeFigure(cellNumber, playerFigure, p.number)
   }
 
   override def undoStep(): Unit = {

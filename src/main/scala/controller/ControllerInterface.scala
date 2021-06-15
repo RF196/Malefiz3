@@ -8,10 +8,11 @@ import model.baseImpl.{Gameboard, Player}
 import scala.swing.event.Event
 import scala.swing.{Color, Publisher}
 
-class GameBoardChanged extends Event
-class Winner extends Event
 
 trait ControllerInterface extends Publisher:
+  
+
+  def gameBoardToString: Option[String]
   
   def gameboard: GameboardInterface
   
@@ -25,7 +26,7 @@ trait ControllerInterface extends Publisher:
 
   def setStatementStatus(statement: Statements): Unit
 
-  def createPlayer(name: String, color: Color): Unit
+  def createPlayer(name: String): Unit
 
   def updatePlayerTurn(player: Player): Unit
 
@@ -61,8 +62,9 @@ trait ControllerInterface extends Publisher:
 
   def weHaveAWinner(): Unit
 
-  
 
 
+class GameBoardChanged extends Event
+class Winner extends Event
 
 
